@@ -28,96 +28,187 @@
   >
 
 </head>
-<script>
-  const SISTEMA_BLOQUEADO = false;
 
-  if (SISTEMA_BLOQUEADO) {
-    document.documentElement.innerHTML = `
-      <html lang="pt-BR">
-        <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>DEYCON | Em manutenção</title>
-
-          <style>
-            * {
-              box-sizing: border-box;
-            }
-
-            body {
-              margin: 0;
-              min-height: 100vh;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-family: Arial, sans-serif;
-              background: #09090b;
-              color: white;
-              text-align: center;
-              padding: 20px;
-            }
-
-            .manutencao {
-              max-width: 500px;
-            }
-
-            .icone {
-              font-size: 60px;
-              margin-bottom: 20px;
-            }
-
-            h1 {
-              margin: 0;
-              font-size: 32px;
-            }
-
-            h1 span {
-              color: #d40000;
-            }
-
-            p {
-              color: #aaa;
-              line-height: 1.6;
-              margin-top: 15px;
-            }
-
-            .status {
-              display: inline-block;
-              margin-top: 20px;
-              padding: 10px 18px;
-              border-radius: 30px;
-              background: #d40000;
-              font-size: 12px;
-              font-weight: bold;
-              letter-spacing: 1px;
-            }
-          </style>
-        </head>
-
-        <body>
-          <div class="manutencao">
-            <div class="icone">🔒</div>
-
-            <h1>
-              DEYCON <span>OFFLINE</span>
-            </h1>
-
-            <p>
-              O sistema está temporariamente indisponível.
-              Estamos realizando uma atualização.
-            </p>
-
-            <div class="status">
-              SISTEMA EM MANUTENÇÃO
-            </div>
-          </div>
-        </body>
-      </html>
-    `;
-  }
-</script>
 
 <body>
+
+  <!-- =====================================================
+       CONTROLE DE ACESSO
+       
+       true  = SISTEMA LIBERADO
+       false = SISTEMA BLOQUEADO
+       
+       PARA BLOQUEAR:
+       const SISTEMA_LIBERADO = false;
+
+       PARA LIBERAR:
+       const SISTEMA_LIBERADO = true;
+  ====================================================== -->
+
+  <script>
+
+    const SISTEMA_LIBERADO = true;
+
+
+    if (!SISTEMA_LIBERADO) {
+
+      document.body.innerHTML = `
+
+        <div style="
+          min-height:100vh;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          padding:25px;
+          background:
+            radial-gradient(
+              circle at top,
+              #2a0000 0%,
+              #09090b 55%,
+              #050505 100%
+            );
+          font-family:
+            Inter,
+            Arial,
+            Helvetica,
+            sans-serif;
+          text-align:center;
+        ">
+
+          <div style="
+            width:100%;
+            max-width:480px;
+            padding:45px 30px;
+            border-radius:25px;
+            background:#ffffff;
+            box-shadow:
+              0 25px 70px
+              rgba(0,0,0,.45);
+          ">
+
+            <div style="
+              width:76px;
+              height:76px;
+              margin:0 auto 22px;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              border-radius:50%;
+              background:#fff0f0;
+              color:#c40000;
+              font-size:34px;
+              box-shadow:
+                0 10px 30px
+                rgba(196,0,0,.12);
+            ">
+              🔒
+            </div>
+
+
+            <div style="
+              color:#a90000;
+              font-family:
+                Arial Black,
+                Arial,
+                sans-serif;
+              font-size:26px;
+              font-weight:900;
+              letter-spacing:3px;
+              margin-bottom:12px;
+            ">
+              DEYCON
+            </div>
+
+
+            <div style="
+              width:45px;
+              height:3px;
+              margin:0 auto 22px;
+              border-radius:10px;
+              background:
+                linear-gradient(
+                  90deg,
+                  #ff2020,
+                  #a90000
+                );
+            ">
+            </div>
+
+
+            <h1 style="
+              margin:0 0 13px;
+              color:#171719;
+              font-size:24px;
+              font-weight:900;
+            ">
+              Sistema temporariamente bloqueado
+            </h1>
+
+
+            <p style="
+              margin:0;
+              color:#68686c;
+              font-size:14px;
+              line-height:1.7;
+            ">
+              O sistema está indisponível no momento.
+              <br>
+              Aguarde a liberação para realizar novos registros.
+            </p>
+
+
+            <div style="
+              margin-top:28px;
+              padding:13px 15px;
+              border:
+                1px solid
+                #eeeeef;
+              border-radius:13px;
+              background:#f7f7f8;
+              color:#99999d;
+              font-size:10px;
+              font-weight:900;
+              letter-spacing:1px;
+            ">
+              CONTROLE DE VALIDADES • RED BULL
+            </div>
+
+
+            <div style="
+              margin-top:18px;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              gap:7px;
+              color:#99999d;
+              font-size:9px;
+              font-weight:800;
+              letter-spacing:1px;
+            ">
+
+              <span style="
+                width:7px;
+                height:7px;
+                border-radius:50%;
+                background:#c40000;
+                display:inline-block;
+              ">
+              </span>
+
+              ACESSO TEMPORARIAMENTE INDISPONÍVEL
+
+            </div>
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+  </script>
+
 
   <!-- =====================================================
        HEADER
@@ -561,9 +652,13 @@
     <section class="legenda-validade">
 
       <div class="legenda-titulo">
-        <span class="legenda-icone">📊</span>
+
+        <span class="legenda-icone">
+          📊
+        </span>
 
         <div>
+
           <strong>
             Indicador de validade
           </strong>
@@ -571,45 +666,66 @@
           <small>
             O status será calculado automaticamente na planilha.
           </small>
+
         </div>
+
       </div>
 
 
       <div class="legenda-items">
 
         <div class="legenda-item verde">
+
           <i></i>
+
           <span>
             +30 dias
           </span>
+
         </div>
 
+
         <div class="legenda-item amarelo">
+
           <i></i>
+
           <span>
             16–30 dias
           </span>
+
         </div>
 
+
         <div class="legenda-item laranja">
+
           <i></i>
+
           <span>
             8–15 dias
           </span>
+
         </div>
 
+
         <div class="legenda-item vermelho">
+
           <i></i>
+
           <span>
             0–7 dias
           </span>
+
         </div>
 
+
         <div class="legenda-item preto">
+
           <i></i>
+
           <span>
             Vencido
           </span>
+
         </div>
 
       </div>
@@ -709,6 +825,10 @@
 
   </footer>
 
+
+  <!-- =====================================================
+       JAVASCRIPT DO SISTEMA
+  ====================================================== -->
 
   <script src="script.js"></script>
 
