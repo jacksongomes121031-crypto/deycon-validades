@@ -28,7 +28,94 @@
   >
 
 </head>
+<script>
+  const SISTEMA_BLOQUEADO = false;
 
+  if (SISTEMA_BLOQUEADO) {
+    document.documentElement.innerHTML = `
+      <html lang="pt-BR">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>DEYCON | Em manutenção</title>
+
+          <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            body {
+              margin: 0;
+              min-height: 100vh;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: Arial, sans-serif;
+              background: #09090b;
+              color: white;
+              text-align: center;
+              padding: 20px;
+            }
+
+            .manutencao {
+              max-width: 500px;
+            }
+
+            .icone {
+              font-size: 60px;
+              margin-bottom: 20px;
+            }
+
+            h1 {
+              margin: 0;
+              font-size: 32px;
+            }
+
+            h1 span {
+              color: #d40000;
+            }
+
+            p {
+              color: #aaa;
+              line-height: 1.6;
+              margin-top: 15px;
+            }
+
+            .status {
+              display: inline-block;
+              margin-top: 20px;
+              padding: 10px 18px;
+              border-radius: 30px;
+              background: #d40000;
+              font-size: 12px;
+              font-weight: bold;
+              letter-spacing: 1px;
+            }
+          </style>
+        </head>
+
+        <body>
+          <div class="manutencao">
+            <div class="icone">🔒</div>
+
+            <h1>
+              DEYCON <span>OFFLINE</span>
+            </h1>
+
+            <p>
+              O sistema está temporariamente indisponível.
+              Estamos realizando uma atualização.
+            </p>
+
+            <div class="status">
+              SISTEMA EM MANUTENÇÃO
+            </div>
+          </div>
+        </body>
+      </html>
+    `;
+  }
+</script>
 
 <body>
 
