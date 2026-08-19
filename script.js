@@ -211,7 +211,7 @@ const produtos = [
       "250 ml",
       "473 ml"
     ]
-  }
+  },
 
 ];
 
