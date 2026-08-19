@@ -166,14 +166,16 @@ const produtos = [
   {
     nome: "Red Bull The Tropical Edition",
     tamanhos: [
-      "250 ml"
+      "250 ml",
+      "473 ml"
     ]
   },
 
   {
     nome: "Red Bull The Melancia Edition",
     tamanhos: [
-      "250 ml"
+      "250 ml",
+      "473 ml"
     ]
   },
 
