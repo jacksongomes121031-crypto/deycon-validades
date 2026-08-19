@@ -13,7 +13,6 @@
 const URL_GOOGLE_SHEETS =
   "https://script.google.com/macros/s/AKfycby434oMp3w2bin-5Gpaf0_xIlClxRVMP5TLdm89cUixctxEe_-XT4_QbrWo6_Eetp-L/exec";
 
-
 /* =========================================================
    EQUIPE / SUPERVISORES
 ========================================================= */
