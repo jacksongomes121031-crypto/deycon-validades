@@ -221,14 +221,14 @@ const produtos = [
   },
    
  {
-    nome: "Red Bull ICE SUGAR FREE",
+    nome: "Red Bull Ice Sugarfree",
     tamanhos: [
       "250 ml"
     ]
   },
 
    {
-    nome: "Red Bull MACA SUGAR FREE",
+    nome: "Red Bull Maçã SugarFree",
     tamanhos: [
       "250 ml"
     ]
