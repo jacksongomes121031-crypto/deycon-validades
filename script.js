@@ -234,6 +234,13 @@ const produtos = [
     ]
   },
    
+   {
+    nome: "Red Bull Nectarina SugarFree",
+    tamanhos: [
+      "250 ml"
+    ]
+  },
+   
 ];
 
 
