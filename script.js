@@ -208,7 +208,8 @@ const produtos = [
   {
     nome: "Red Bull The Pomelo Edition Sugarfree",
     tamanhos: [
-      "250 ml"
+      "250 ml",
+      "473 ml"
     ]
   }
 
