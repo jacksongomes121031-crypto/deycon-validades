@@ -13,6 +13,7 @@
 const URL_GOOGLE_SHEETS =
   "https://script.google.com/macros/s/AKfycby434oMp3w2bin-5Gpaf0_xIlClxRVMP5TLdm89cUixctxEe_-XT4_QbrWo6_Eetp-L/exec";
 
+
 /* =========================================================
    EQUIPE / SUPERVISORES
 ========================================================= */
@@ -28,6 +29,7 @@ const equipes = {
 
   "CESAR MATHEUS MENDES": [
     "ADINALVA A.SPERANDIO3039",
+    "BIANCA GONCALVES PERDONO",
     "DOUGLAS F DE SOUZA",
     "ELISABETE R.ALMEIDA 2533",
     "MICHELI L.BISCAIA 503172",
@@ -35,7 +37,6 @@ const equipes = {
   ],
 
   "CLAUDIO ERZINGER": [
-    "ADRIANA MARA DA SILVA",
     "BRUNA APARECIDA ARANTES 638",
     "BRUNA C.P.A.ROSARIO 503323",
     "CLAUDEMIR MOREIRA DA SILVA",
@@ -46,7 +47,6 @@ const equipes = {
   ],
 
   "DIEGO LUIZ ANTONIACOMI": [
-    "DAIANE DE FATIMA TOLEDO",
     "DANIELE MOREIRA DE OLIVEIRA",
     "ELIANA MENDONCA DE OLIVEIRA",
     "FRANCIELE C.GASPAR503025",
@@ -67,8 +67,6 @@ const equipes = {
   ],
 
   "KATIA RIBEIRO PEREIRA": [
-    "CARLOS HENRIQUE F.BARGINSKI",
-    "CAROLINE DOS SANTOS PORTELLA",
     "JOELMA WOINAROSKI COELHO",
     "JOYCE DA SILVA",
     "MARLON DOS SANTOS RODRIGUES",
@@ -100,8 +98,6 @@ const equipes = {
   ],
 
   "SAMUEL GONCALVES": [
-    "FERNANDA R.DE GODOY REOLON",
-    "GISELE DA SILVA CASSEMIRO",
     "JUCY DE OLIVEIRA S.TEODORO",
     "MARCIA IACHECHEN LARA",
     "MIDIAN TENEDINI",
@@ -165,23 +161,20 @@ const produtos = [
     nome: "Red Bull The Summer Edition Sugarfree",
     tamanhos: [
       "250 ml"
-
     ]
   },
 
   {
     nome: "Red Bull The Tropical Edition",
     tamanhos: [
-      "250 ml",
-      "473 ml"
+      "250 ml"
     ]
   },
 
   {
     nome: "Red Bull The Melancia Edition",
     tamanhos: [
-      "250 ml",
-      "473 ml"
+      "250 ml"
     ]
   },
 
@@ -216,8 +209,7 @@ const produtos = [
   {
     nome: "Red Bull The Pomelo Edition Sugarfree",
     tamanhos: [
-      "250 ml",
-      "473 ml"
+      "250 ml"
     ]
   }
 
